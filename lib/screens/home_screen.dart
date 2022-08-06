@@ -10,8 +10,15 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.account_circle),
+          iconSize: 30.0,
+          onPressed: () {},
+        ),
+        title: Text('Food Delivery',
+      ),),
     );
   }
 }
