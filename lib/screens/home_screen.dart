@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({ Key? key }) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -17,8 +17,19 @@ class _HomeScreenState extends State<HomeScreen> {
           iconSize: 30.0,
           onPressed: () {},
         ),
-        title: Text('Food Delivery',
-      ),),
+        title: const Text('Food Delivery'),
+        actions: <Widget>[
+          TextButton(
+            style: TextButton.styleFrom(
+              padding: const EdgeInsets.all(16.0),
+              primary: Colors.white,
+              textStyle: const TextStyle(fontSize: 20),
+            ),
+            onPressed: () {},
+            child: const Text('Cart (5)'),
+          ),
+        ],
+      ),
     );
   }
 }
