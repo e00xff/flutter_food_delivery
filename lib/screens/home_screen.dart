@@ -47,7 +47,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30.0),
-                  borderSide: BorderSide(width: 0.8, color: Theme.of(context).primaryColor),
+                  borderSide: BorderSide(
+                    width: 0.8,
+                    color: Theme.of(context).primaryColor,
+                  ),
                 ),
                 hintText: 'Search food or restaurant',
                 prefixIcon: const Icon(
